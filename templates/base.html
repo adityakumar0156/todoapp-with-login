@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="https://media.istockphoto.com/photos/wood-font-plank-font-letter-a-picture-id844485246?s=612x612">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>{%block title%}{%endblock %}</title>
+
+
+  </head>
+  <style>
+      {%block css%}{% endblock %}
+  </style>
+  <body>
+
+
+  <div style="background-color:black;position:relative;overflow:auto;height:50px;position:fixed;width:100%;" >
+    <h5 style="color:white;display:inline-block;" class="my-2">Personal Diary</h5>
+
+        <a  href="/"  class="btn btn-success mx-2 my-1" style="float:right;">Home </a>
+
+        <a  href="/login"  class="btn btn-success mx-2 my-1" style="float:right;">LogIn</a>
+
+        <a  href="/signin"  class="btn btn-success mx-2 my-1" style="float:right;">SignIn</a>
+  </div>
+
+
+
+  {%block content%}
+  {%endblock %}
+<br><br><br>
+  <div id="footer" style="margin:1px solid black; height:320px;clear:both;background-color:grey;font-size:150%;color:white;padding:50px;">
+
+     Contact:Aditya Kumar Singh<br>
+     Address:National Institute of Technology,Raipur Hostel-A<br>
+     E-mail:aditya5kumar2012@gmail.com<br>
+     Mob.no:8582057616
+
+
+
+  </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

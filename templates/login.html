@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+{%block title%}LogIn{%endblock%}
+{%block content%}
+<br><br><br>
+
+{% if error.__len__()>0%}
+<div class="alert alert-primary" role="alert">
+  {{error}}
+</div>
+{%endif%}
+
+<form method="post" action="/login" style="display:inline-block;width:400px;" class="mx-3">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" value="{{email}}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+{%endblock%}
